@@ -1,10 +1,18 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
+import React from "react"
+import { Route } from "react-router-dom"
+import Nav from './Nav'
 
-function App () {
+function App() {
   return (
     <>
-      <h1>This is the gauntlet</h1>
+      <div>
+        <h1>This is the gauntlet</h1>
+      </div>
+
+      <div>
+        <Route path="/" component={Nav} />
+
+      </div>
     </>
   )
 }
