@@ -1,0 +1,28 @@
+html, body {
+	padding: 0;
+	margin: 0;
+  /* background-color: rgb(170, 236, 236) */
+  /* background-image: url("./images/background.jpeg") */
+	}
+html {
+	font-size: 1em;
+	}
+body {
+	font-size: 100%;
+	}
+a img, :link img, :visited img {
+	border: 0;
+	}
+
+
+img {
+  max-height: 350px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+  margin: 10px;
+}
