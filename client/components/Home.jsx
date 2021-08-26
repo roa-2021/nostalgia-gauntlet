@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <h1>Home page</h1>
-      <Link to={'/Pokemon'}> Link to Pokemon page</Link>
+      <Link to={'/Pokemon'}> Link to first challenge (Pokemon)</Link>
     </div>
   )
 }
