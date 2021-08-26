@@ -1,6 +1,8 @@
 html, body {
 	padding: 0;
 	margin: 0;
+  /* background-color: rgb(170, 236, 236) */
+  /* background-image: url("./images/background.jpeg") */
 	}
 html {
 	font-size: 1em;
@@ -22,4 +24,5 @@ img {
   object-fit: cover;
   width: 230px;
   height: 230px;
+  margin: 10px;
 }
