@@ -8,7 +8,7 @@ function Nav () {
         <Link to={"/"}> Home</Link>
       </ul>
     </>
-  );
+  )
 }
 
-export default Nav;
+export default Nav
