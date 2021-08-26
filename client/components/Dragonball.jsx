@@ -10,19 +10,19 @@ function Dragonball () {
       </div>
 
       <div>
-      <Link to={"/"}><img src={'./images/DBZ1.jpeg'} /></Link>
+      <Link to={"/"}><img class="img-circle" src={'./images/DBZ1.jpeg'} /></Link>
       </div>
 
       <div>
-      <Link to={"/NextPage"}><img src={'./images/DBZ2.jpeg'} /></Link>
+      <Link to={"/NextPage"}><img class="img-circle" src={'./images/DBZ2.jpeg'} /></Link>
       </div>
 
       <div>
-      <Link to={"/"}><img src={'./images/DBZ3.jpeg'} /></Link>
+      <Link to={"/"}><img class="img-circle" src={'./images/DBZ3.jpeg'} /></Link>
       </div>
 
       <div>
-      <Link to={"/"}><img src={'./images/DBZ4.jpeg'} /></Link>
+      <Link to={"/"}><img class="img-circle" src={'./images/DBZ4.jpeg'} /></Link>
       </div>
 
       <div>

@@ -16,3 +16,10 @@ a img, :link img, :visited img {
 img {
   max-height: 350px;
 }
+
+.img-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
