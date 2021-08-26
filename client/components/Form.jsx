@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
 
-function Form() {
+function Form () {
     const [name, setName] = useState('')
 
     const handleSubmit = (evt) => {
       evt.preventDefault()
-      alert(`Hello ${name}!`)
+      // alert(`Hello ${name}!`)
       setName('')
     }
   
@@ -16,9 +16,9 @@ function Form() {
     return (
       <>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name" >Name</label>
+          <label htmlFor="name" >What is your name?</label>
           <input name="What is your name" placeholder='Challenger Name' value={name} type="text" onChange={handleChange} />
-          <button>Submit</button>
+          <button className='btn btn-warning btn-sm'>Submit</button>
         </form>
       </>
     )
