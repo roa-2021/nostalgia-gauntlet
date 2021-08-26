@@ -15,7 +15,7 @@ function TotallySpies() {
       </div>
 
       <div>
-        <Link to={"/"}> Incorrect Answer</Link>
+        <Link to={"/Dragonball"}> Totally Spies</Link>
       </div>
 
       <div>
