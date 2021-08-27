@@ -27,7 +27,7 @@ function Pokemon (props) {
       </div>
    
       <div>
-        <Link to={'/TotallySpies'}> 
+        <Link to={'/Kimpossible'}> 
           <h2 style={{ color: `${colour.Evie}` }} onClick={clickHandler}>Evie</h2>
         </Link>
       </div>

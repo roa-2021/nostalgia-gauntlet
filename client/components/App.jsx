@@ -19,7 +19,7 @@ const App = () => {
 
       <div className="task-challenge">
         <Route path="/Pokemon" component={Pokemon} />
-        <Route path="/TotallySpies" component={TotallySpies} />
+        <Route path="/Kimpossible" component={TotallySpies} />
         <Route path="/Dragonball" component={Dragonball} />
         <Route exact path='/' component={Home} />
         <Route path='/you-won' component={End} />

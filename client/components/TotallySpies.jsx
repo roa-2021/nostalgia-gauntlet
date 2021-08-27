@@ -14,11 +14,11 @@ function TotallySpies() {
       </div>
 
       <div>
-        <Link to={"/Dragonball"}> Totally Spies</Link>
+        <Link to={"/"}> Kim Possible</Link>
       </div>
 
       <div>
-        <Link to={"/"}> Kim Possible</Link>
+        <Link to={"/Dragonball"}> Totally Spies</Link>
       </div>
 
       <div>
