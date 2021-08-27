@@ -18,11 +18,11 @@ function TotallySpies() {
       </div>
 
       <div>
-        <Link to={"/"}> Incorrect Answer</Link>
+        <Link to={"/"}> Kim Possible</Link>
       </div>
 
       <div>
-        <Link to={"/"}> Incorrect Answer</Link>
+        <Link to={"/"}> PowerPuff Girls</Link>
       </div>
     </>
 
