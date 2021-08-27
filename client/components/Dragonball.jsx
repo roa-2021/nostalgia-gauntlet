@@ -5,7 +5,7 @@ function Dragonball () {
   return (
     <>
       <div>
-        <h1>Challenge number #</h1>
+        <h1>Challenge number 3</h1>
         <h2>Which of these characters is Goku?</h2>
       </div>
 

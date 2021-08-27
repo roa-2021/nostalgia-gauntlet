@@ -1,47 +1,65 @@
-import { Link } from "react-router-dom"
 import React, { useState } from 'react'
+import { Link, Redirect, Route } from "react-router-dom"
 
-function Pokemon (props) {
+const Pokemon = (props) => {
+  const rightAnswer = (target) => {
+    rightClickHandler()
+    console.log('that was right')
+    setTimeout(() => {
+      props.history.push('/TotallySpies')
+    }, 1000)
+  }
+
+  const wrongAnswer = (target) => {
+    wrongClickHandler(target)
+    console.log('that was wrong')
+    setTimeout(() => {
+      props.history.push('/')
+    }, 1000)
+  }
+
   const [colour, setColour] = useState({
-    Evie: 'black;',
-    Jigglypuff: 'black;',
-    Meowth: 'black;'
+    Evie: 'btn btn-warning q-opt',
+    Jigglypuff: 'btn btn-warning q-opt',
+    Meowth: 'btn btn-warning q-opt'
   })
-  const clickHandler = () => {
+
+  const rightClickHandler = () => {
     setColour({
-      ...colour,
-      Evie: 'green;',
-      Jigglypuff: 'red;',
-      Meowth: 'red;'
+      Evie: 'btn btn-success q-opt',
+      Jigglypuff: 'btn btn-danger q-opt',
+      Meowth: 'btn btn-danger q-opt'
     })
   }
+
+  const wrongClickHandler = (char) => {
+    setColour({
+      ...colour,
+      [char]: 'btn btn-danger q-opt'
+    })
+  }
+
   return (
     <>
       <div>
-        <h1>Challenge number #</h1> 
+        <h1>Challenge number 1</h1> 
         <h2>Who's that Pokemon?</h2>
       </div>
 
       <div>
         <img src={'./images/pokemans.png'} />
       </div>
-   
+
       <div>
-        <Link to={'/TotallySpies'}> 
-          <h2 style={{ color: `${colour.Evie}` }} onClick={clickHandler}>Evie</h2>
-        </Link>
+        <button className={colour.Evie} type='button' onClick={rightAnswer}>Evie</button>
       </div>
 
       <div>
-        <Link to={'/'}>
-          <h2 style={{ color: `${colour.Jigglypuff}` }} onClick={clickHandler}>Jigglypuff</h2>
-        </Link>
+        <button className={colour.Jigglypuff} type='button' onClick={() => wrongAnswer('Jigglypuff')}>Jigglypuff</button>
       </div>
 
       <div>
-        <Link to={'/'}>
-          <h2 style={{ color: `${colour.Meowth}` }} onClick={clickHandler}>Meowth</h2>
-        </Link>
+        <button className={colour.Meowth} type='button' onClick={() => wrongAnswer('Meowth')}>Meowth</button>
       </div>
     </>
   )
