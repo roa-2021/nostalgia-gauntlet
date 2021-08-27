@@ -40,7 +40,7 @@ const Rugrats = (props) => {
   return (
     <>
       <div>
-        <h1>Challenge number 3</h1> 
+        <h1>Challenge number 3</h1>
         <h2>Who isn't a character in Rugrats?</h2>
       </div>
 

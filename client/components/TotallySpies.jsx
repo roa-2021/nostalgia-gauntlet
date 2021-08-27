@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function TotallySpies(props) {
+function TotallySpies (props) {
   const rightAnswer = () => {
     rightClickHandler()
     setTimeout(() => {
@@ -38,30 +38,28 @@ function TotallySpies(props) {
 
   return (
     <>
-    <div>
+      <div>
         <h1>Challenge number 2</h1>
         <h2>Name this show</h2>
-    </div>
+      </div>
 
       <div>
         <img src={'./images/totally-spies.jpeg'} />
       </div>
 
       <div>
-      <button className={colour.PowerPuff} type='button' onClick={() => wrongAnswer('PowerPuff')}>PowerPuff Girls</button>
+        <button className={colour.PowerPuff} type='button' onClick={() => wrongAnswer('PowerPuff')}>PowerPuff Girls</button>
       </div>
 
       <div>
-      <button className={colour.KimPoss} type='button' onClick={() => wrongAnswer('KimPoss')}>Kim Possible</button>
+        <button className={colour.KimPoss} type='button' onClick={() => wrongAnswer('KimPoss')}>Kim Possible</button>
       </div>
 
       <div>
-      <button className={colour.TotallySpies} type='button' onClick={() => rightAnswer('TotallySpies')}>Totally Spies</button>
+        <button className={colour.TotallySpies} type='button' onClick={() => rightAnswer('TotallySpies')}>Totally Spies</button>
 
       </div>
     </>
-
-
   )
 }
 

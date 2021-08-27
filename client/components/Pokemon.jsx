@@ -41,7 +41,7 @@ const Pokemon = (props) => {
   return (
     <>
       <div>
-        <h1>Challenge number 1</h1> 
+        <h1>Challenge number 1</h1>
         <h2>Who's that Pokemon?</h2>
       </div>
 
