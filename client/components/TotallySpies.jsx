@@ -5,7 +5,7 @@ function TotallySpies() {
   return (
     <>
     <div>
-        <h1>Challenge number #</h1> 
+        <h1>Challenge number 2</h1> 
         <h2>Name this show</h2>
     </div>
 
