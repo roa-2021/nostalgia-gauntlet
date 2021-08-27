@@ -1,12 +1,18 @@
-import React from "react"
+import React from 'react'
 import { Link } from 'react-router-dom'
+import Form from './Form'
 
 function Home() {
   return (
-    <div>
-      <h2>Welcome challenger. <br/>Click here for your first challenge:</h2>
-      <Link to={'/Pokemon'}> Link to first challenge (Pokemon)</Link>
-    </div>
+    <>
+      <div>
+        <h1>Welcome challenger!</h1>
+
+        <Form/>
+
+        <Link to={'/Pokemon'}><h3 className='enter-challenge'>😬 Click here for your first challenge 😬</h3></Link>
+      </div>
+    </>
   )
 }
 
