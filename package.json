@@ -14,7 +14,7 @@
     "lint": "eslint --ext .js,.jsx ."
   },
   "engines": {
-    "node": "14.17.5x"
+    "node": "14.x"
   },
   "babel": {
     "presets": [
