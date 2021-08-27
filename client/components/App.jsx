@@ -6,6 +6,8 @@ import Nav from './Nav'
 import Pokemon from './Pokemon'
 import TotallySpies from './TotallySpies'
 import Dragonball from './Dragonball'
+import End from './End'
+import AboutUs from './AboutUs'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/TotallySpies" component={TotallySpies} />
         <Route path="/Dragonball" component={Dragonball} />
         <Route exact path='/' component={Home} />
+        <Route path='/you-won' component={End} />
+        <Route path='/about-us' component={AboutUs} />
       </div>
 
       <div className="footer">
