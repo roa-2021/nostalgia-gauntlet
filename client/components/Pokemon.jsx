@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Link, Redirect, Route } from "react-router-dom"
 
 const Pokemon = (props) => {
-  const rightAnswer = (target) => {
+  const rightAnswer = () => {
     rightClickHandler()
     console.log('that was right')
     setTimeout(() => {

@@ -4,7 +4,7 @@ function TotallySpies(props) {
   const rightAnswer = () => {
     rightClickHandler()
     setTimeout(() => {
-      props.history.push('/Dragonball')
+      props.history.push('/Rugrats')
     }, 1000)
   }
 

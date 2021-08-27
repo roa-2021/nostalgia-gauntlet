@@ -6,6 +6,7 @@ import Nav from './Nav'
 import Pokemon from './Pokemon'
 import TotallySpies from './TotallySpies'
 import Dragonball from './Dragonball'
+import Rugrats from './Rugrats'
 import End from './End'
 import AboutUs from './AboutUs'
 
@@ -20,6 +21,7 @@ const App = () => {
       <div className="task-challenge">
         <Route path="/Pokemon" component={Pokemon} />
         <Route path="/TotallySpies" component={TotallySpies} />
+        <Route path="/Rugrats" component={Rugrats} />
         <Route path="/Dragonball" component={Dragonball} />
         <Route exact path='/' component={Home} />
         <Route path='/you-won' component={End} />
