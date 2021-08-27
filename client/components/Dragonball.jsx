@@ -13,8 +13,6 @@ function Dragonball () {
         <Link to={'/'}><img className="img-circle" src={'./images/DBZ1.jpeg'} /></Link>
         <Link to={'/you-won'}><img className="img-circle" src={'./images/DBZ2.jpeg'} /></Link>
       </div>
-
-
       <div>
         <Link to={'/'}><img className="img-circle" src={'./images/DBZ3.jpeg'} /></Link>
         <Link to={'/'}><img className="img-circle" src={'./images/DBZ4.jpeg'} /></Link>
