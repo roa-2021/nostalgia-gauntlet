@@ -200,7 +200,7 @@ function Dragonball() {
     className: "img-circle",
     src: './images/DBZ1.jpeg'
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: '/NextPage'
+    to: '/you-won'
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     className: "img-circle",
     src: './images/DBZ2.jpeg'
@@ -233,7 +233,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
 
 
 function End() {
@@ -278,9 +277,15 @@ function Form() {
       name = _useState2[0],
       setName = _useState2[1];
 
-  var handleSubmit = function handleSubmit(evt) {
-    evt.preventDefault(); // alert(`Hello ${name}!`)
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+      _useState4 = _slicedToArray(_useState3, 2),
+      selectedName = _useState4[0],
+      setSelectedName = _useState4[1];
 
+  var challengerName = setSelectedName(name);
+
+  var handleSubmit = function handleSubmit(evt) {
+    evt.preventDefault();
     setName('');
   };
 
@@ -300,7 +305,7 @@ function Form() {
     onChange: handleChange
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn btn-warning btn-sm"
-  }, "Submit")));
+  }, "Submit"), selectedName));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Form);
